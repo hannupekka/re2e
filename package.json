@@ -1,0 +1,23 @@
+{
+  "name": "re2e",
+  "version": "1.0.0",
+  "description": "React e2e testing demo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "React",
+    "e2e"
+  ],
+  "author": "Hannu-Pekka Heinäjärvi <hannupekka@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jsxcs": "^0.1.9",
+    "gulp-mocha": "^2.1.3",
+    "gulp-plumber": "^1.0.1",
+    "mocha": "^2.3.0",
+    "react": "^0.13.3"
+  }
+}
