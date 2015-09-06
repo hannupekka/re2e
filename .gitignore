@@ -1,2 +1,4 @@
 .git
+*.log
+reports/
 node_modules

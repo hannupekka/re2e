@@ -1,10 +1,9 @@
 var gulp = require('gulp'),
     jsxcs = require('gulp-jsxcs'),
-    mocha = require('gulp-mocha'),
     plumber = require('gulp-plumber');
 
 gulp.task('jscs', function () {
-    gulp.src(['*.js'])
+    gulp.src(['*.js', 'tests/*.js'])
         .pipe(plumber({
             errorHandler: function (err) {
                 console.log(err);
