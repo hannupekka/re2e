@@ -1,3 +1,5 @@
+var server = require('../server.js');
+
 module.exports = {
     tags: ['demo'],
     'Demo test': function (client) {
@@ -31,6 +33,8 @@ module.exports = {
         client.expect.element('#text').to.have.value.equal('');
         client.expect.element('#length').text.to.equal(0);
 
-        client.end();
+        client.end(function() {
+            server.close();
+        });
     }
 };
